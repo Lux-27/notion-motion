@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1708791987829,
+      "tag": "0000_dazzling_the_hunter",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1708793553670,
+      "tag": "0001_jazzy_leech",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1708794687262,
+      "tag": "0002_normal_leech",
+      "breakpoints": true
+    }
+  ]
+}

@@ -75,7 +75,6 @@ const SettingsForm = () => {
   const [loadingPortal, setLoadingPortal] = useState(false);
 
   //WIP PAYMENT PORTAL
-
   const redirectToCustomerPortal = async () => {
     setLoadingPortal(true);
     try {
@@ -98,6 +97,7 @@ const SettingsForm = () => {
     }
     await addCollaborators([profile], workspaceId);
     setCollaborators([...collaborators, profile]);
+    router.refresh();
   };
 
   //remove collaborators
@@ -122,7 +122,7 @@ const SettingsForm = () => {
     });
     if (titleTimerRef.current) clearTimeout(titleTimerRef.current);
     titleTimerRef.current = setTimeout(async () => {
-      // await updateWorkspace({ title: e.target.value }, workspaceId);
+      await updateWorkspace({ title: e.target.value }, workspaceId);
     }, 500);
   };
 

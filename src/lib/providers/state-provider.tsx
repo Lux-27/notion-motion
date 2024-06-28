@@ -60,7 +60,7 @@ type Action =
       type: "UPDATE_FOLDER";
       payload: {
         folder: Partial<appFoldersType>;
-        workspaceId: string;
+        workspaceId: string | null;
         folderId: string;
       };
     }

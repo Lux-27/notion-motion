@@ -114,7 +114,6 @@ export const deleteFolder = async (folderId: string) => {
   if (!folderId) return;
   await db.delete(files).where(eq(files.id, folderId));
 };
-
 export const getFolderDetails = async (folderId: string) => {
   const isValid = validate(folderId);
   if (!isValid) {

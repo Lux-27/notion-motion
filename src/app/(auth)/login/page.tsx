@@ -58,12 +58,12 @@ const LoginPage = () => {
         >
           <Image
             src={CypressLogo}
-            alt="Curzor Logo"
+            alt="NotionMotion Logo"
             width={50}
             height={50}
           />
           <span className="font-semibold dark:text-white text-4xl ml-2">
-            curzor.
+            NotionMotion.
           </span>
         </Link>
         <FormDescription className="text-foreground/60">

@@ -83,7 +83,7 @@ const Header = () => {
           width={25}
           height={25}
         />
-        <span className="font-semibold dark:text-white">curzor.</span>
+        <span className="font-semibold dark:text-white">NotionMotion.</span>
       </Link>
       <NavigationMenu className="hidden md:block">
         <NavigationMenuList className="gap-6">

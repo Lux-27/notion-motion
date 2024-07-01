@@ -9,6 +9,7 @@ import { twMerge } from "tailwind-merge";
 import AppStateProvider from "@/lib/providers/state-provider";
 import { SupabaseUserProvider } from "@/lib/providers/supabase-user-provider";
 import { Toaster } from "@/components/ui/toaster";
+import { SocketProvider } from "@/lib/providers/socket-provider";
 
 const inter = DM_Sans({ subsets: ["latin"] });
 
@@ -31,8 +32,12 @@ export default function RootLayout({
           enableSystem
         >
           <AppStateProvider>
-            <SupabaseUserProvider>{children}</SupabaseUserProvider>
-            <Toaster />
+            <SupabaseUserProvider>
+              <SocketProvider>
+                {children}
+                <Toaster />
+              </SocketProvider>
+            </SupabaseUserProvider>
           </AppStateProvider>
         </ThemeProvider>
       </body>

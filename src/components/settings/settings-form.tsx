@@ -97,7 +97,7 @@ const SettingsForm = () => {
     }
     await addCollaborators([profile], workspaceId);
     setCollaborators([...collaborators, profile]);
-    router.refresh();
+    // router.refresh();
   };
 
   //remove collaborators
@@ -166,8 +166,8 @@ const SettingsForm = () => {
     } else setPermissions(val);
   };
 
-  //CHALLENGE fetching avatar details
-  //WIP Payment Portal redirect
+  //TODO fetching avatar details
+  //TODO Payment Portal redirect
 
   useEffect(() => {
     const showingWorkspace = state.workspaces.find(

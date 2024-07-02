@@ -22,6 +22,7 @@ import { Input } from "../ui/input";
 import {
   addCollaborators,
   deleteWorkspace,
+  getActiveProductsWithPrice,
   getCollaborators,
   removeCollaborators,
   updateWorkspace,
@@ -76,10 +77,13 @@ const SettingsForm = () => {
 
   //WIP PAYMENT PORTAL
   const redirectToCustomerPortal = async () => {
+    // const { data: products, error } = await getActiveProductsWithPrice();
+    // console.log(products);
     setLoadingPortal(true);
     try {
       const { url, error } = await postData({
         url: "/api/create-portal-link",
+        // data: { price: products[0].prices[0] },
       });
       window.location.assign(url);
     } catch (error) {

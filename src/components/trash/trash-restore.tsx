@@ -1,9 +1,9 @@
-'use client';
-import { appFoldersType, useAppState } from '@/lib/providers/state-provider';
-import { File } from '@/lib/supabase/supabase.types';
-import { FileIcon, FolderIcon } from 'lucide-react';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+"use client";
+import { appFoldersType, useAppState } from "@/lib/providers/state-provider";
+import { File } from "@/lib/supabase/supabase.types";
+import { FileIcon, FolderIcon } from "lucide-react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 const TrashRestore = () => {
   const { state, workspaceId } = useAppState();

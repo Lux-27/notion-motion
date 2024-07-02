@@ -110,7 +110,7 @@ export const copyBillingDetailsToCustomer = async (
       })
       .where(eq(users.id, uuid));
   } catch (error) {
-    throw new Error("Couldnot copy customer billing details");
+    throw new Error("Could not copy customer billing details");
   }
 };
 
